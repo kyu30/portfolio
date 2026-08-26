@@ -34,7 +34,7 @@ export default function DrumBreak() {
         <section className="space-y-6 text-bone-dim text-lg leading-relaxed">
           <h2 className="font-display text-2xl text-bone">The problem</h2>
           <p>
-            A drum break is short, percussive, and mostly transient - a kick,
+            A drum break is short, percussive, and mostly transient: a kick,
             a snare, some room noise, gone in two seconds. That&rsquo;s an
             awkward shape for a generative model. Treat the sample as a raw
             waveform and you&rsquo;re fighting an extremely high sample rate;
@@ -48,7 +48,7 @@ export default function DrumBreak() {
           </h2>
           <p>
             I trained a convolutional VAE, and separately a VQ-VAE, on
-            spectrograms of two-second drum break samples, then wrote the
+            spectrograms of two-second drum break samples, then wrote
             scripts to invert model output back into audio and to render
             spectrograms for comparison. The two architectures made
             different mistakes worth comparing: the plain VAE tended toward
@@ -59,10 +59,9 @@ export default function DrumBreak() {
           </p>
           <p>
             Across more than 1,000 reconstructions and novel generated
-            samples, the earliest outputs were structured but noisy -
+            samples, the earliest outputs were structured but noisy. They were
             recognizably drum-shaped in the spectrogram, but with a layer of
-            static-like grain the ear picks up immediately even when the eye
-            barely notices it in the image. Two changes mattered most:
+            static-like grain the ear picks up immediately. Two changes mattered most:
             normalizing the spectrogram inputs more carefully, and KL
             annealing during training so the latent space wasn&rsquo;t
             forced toward the prior before it had learned useful structure.
@@ -99,19 +98,6 @@ export default function DrumBreak() {
               </figcaption>
             </figure>
           </div>
-
-          <h2 className="font-display text-2xl text-bone pt-4">
-            What&rsquo;s still hard
-          </h2>
-          <p>
-            Even the cleaned-up samples are more &ldquo;drum-like&rdquo; than
-            &ldquo;a drum&rdquo; - recognizable as percussion, generative
-            rather than reproductive, but not something you&rsquo;d drop
-            into a track undoctored. The honest next step is a listening
-            evaluation rather than another spectrogram metric: get people to
-            actually rate the outputs, since the eye and the ear disagree
-            about what counts as a good reconstruction here.
-          </p>
         </section>
       </div>
     </main>

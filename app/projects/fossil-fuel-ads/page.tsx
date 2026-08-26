@@ -46,7 +46,7 @@ export default function FossilFuelAds() {
             steers a reader toward a conclusion the evidence doesn&rsquo;t
             support. That gap between sentence-level accuracy and
             article-level rhetoric is hard to study, because it&rsquo;s not
-            really a fact-checking problem — it&rsquo;s a structure problem.
+            really a fact-checking problem - it&rsquo;s a structure problem.
           </p>
 
           <h2 className="font-display text-2xl text-bone pt-4">
@@ -65,27 +65,13 @@ export default function FossilFuelAds() {
             made, but how directly the text actually supports it.
           </p>
           <p>
-            To make sense of claims across hundreds of articles, I applied
+            To make sense of claims across hundreds of articles, we applied
             BERTopic to cluster related claims together, which helped refine
             a hierarchical claim typology for the project&rsquo;s CLAIMS 2.0
             model. Clustering mattered because a flat list of thousands of
-            claims is unreadable; grouped by topic, patterns in rhetorical
-            strategy — which arguments get reused, which get softened,
-            which get buried in supporting detail — become visible.
-          </p>
-
-          <h2 className="font-display text-2xl text-bone pt-4">
-            What&rsquo;s still hard
-          </h2>
-          <p>
-            Confidence scoring is the weakest link. A subclaim that&rsquo;s
-            phrased vaguely can score as loosely connected to its superclaim
-            even when a human reader would say it&rsquo;s doing real
-            rhetorical work - the model is better at catching explicit
-            argument than insinuation. That&rsquo;s the direction I&rsquo;d
-            want to push next: distinguishing claims that are weak because
-            they&rsquo;re poorly evidenced from claims that are weak because
-            the pipeline under-read them.
+            claims is unreadable. Grouped by topic, patterns in rhetorical
+            strategy (which arguments get reused, softened,
+            and/or buried in supporting detail) become visible.
           </p>
         </section>
       </div>
