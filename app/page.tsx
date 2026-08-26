@@ -13,12 +13,12 @@ const experience = [
     dates: "sep 2025 – jan 2026",
   },
   {
-    role: "technical consultant",
+    role: "freelance developer",
     org: "sqo marketing",
     dates: "oct 2024 – jun 2025",
   },
   {
-    role: "co-owner & technology lead",
+    role: "co-owner, operations & technology",
     org: "the collector's bar",
     dates: "apr 2024 – present",
   },
@@ -44,15 +44,14 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-surface-border">
         <div className="mx-auto max-w-4xl px-6 pt-24 pb-20 sm:pt-32 sm:pb-28">
-          <p className="font-mono text-xs tracking-[0.2em] text-signal uppercase mb-6">
-            Your Name — Your Tagline
-          </p>
-          <h1 className="font-display text-5xl sm:text-6xl leading-[1.05] mb-6">
-            Placeholder headline goes <em className="italic text-wave">here</em>.
+          {/*<p className="font-mono text-xs tracking-[0.2em] text-muted uppercase mb-6">
+            Keith Yu (he/him) — Data Science, Software Engineering
+          </p>*/}
+          <h1 className="font-display text-3xl sm:text-4xl leading-snug mb-6">
+            Hey!
           </h1>
-          <p className="max-w-xl text-bone-dim text-lg leading-relaxed mb-10">
-            Placeholder subtext — replace with a short intro about who you
-            are and what you work on.
+          <p className="max-w-xl text-bone-dim text-base leading-relaxed mb-10">
+            I'm Keith, a first year Data Science grad student at Georgetown. I build things that combine machine learning, software engineering, and embedded systems.
           </p>
 
           <Waveform className="h-14 w-full max-w-md mb-10" />
@@ -72,7 +71,7 @@ export default function Home() {
             </a>
             <a
               className="hover:text-signal transition-colors"
-              href="keithcyu@gmail.com"
+              href="mailto:keithcyu@gmail.com"
             >
               email
             </a>
