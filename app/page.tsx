@@ -65,7 +65,7 @@ export default function Home() {
             </a>
             <a
               className="hover:text-signal transition-colors"
-              href="https://linkedin.com/kyu30"
+              href="https://www.linkedin.com/in/kyu30/"
             >
               linkedin ↗
             </a>
