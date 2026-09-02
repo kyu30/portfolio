@@ -142,6 +142,12 @@ export default function Home() {
 
         <div className="space-y-6">
           <ProjectCard
+            eyebrow="Web Development"
+            title="The Caravel"
+            summary="Georgetown University's only student-run international affairs paper"
+            accent = "wave"
+          />
+          <ProjectCard
             eyebrow="Computer Vision · real-time NLG"
             title="Caster"
             summary="Watching an esports broadcast frame by frame, so every kill and round gets narrated in natural language the instant it happens."
