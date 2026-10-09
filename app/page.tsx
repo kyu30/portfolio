@@ -3,6 +3,11 @@ import Waveform from "./components/Waveform";
 
 const experience = [
   {
+    role: "technical research associate",
+    org: "bonne terre labs",
+    dates: "oct 2026 - feb 2027",
+  },
+  {
     role: "software engineering intern",
     org: "capital one",
     dates: "jun 2026 – aug 2026",
@@ -27,13 +32,13 @@ const experience = [
 
 const education = [
   {
-    school: "Georgetown University",
-    degree: "M.S in Data Science",
+    school: "georgetown university",
+    degree: "master's in data science, ai concentration",
     dates: "aug 2026 - present",
   },
   {
-    school: "Boston University",
-    degree: "B.S. in Data Science, Minor in Business Administration",
+    school: "boston university",
+    degree: "bachelor's in data science, minor in business administration",
     dates: "sep 2023 - june 2026",
   },
 ];
@@ -44,11 +49,11 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-surface-border">
         <div className="mx-auto max-w-4xl px-6 pt-24 pb-20 sm:pt-32 sm:pb-28">
-          {/*<p className="font-mono text-xs tracking-[0.2em] text-muted uppercase mb-6">
+          {/*<p className="font-mono text-xs tracking-[0.2em] text-muted mb-6">
             Keith Yu (he/him) — Data Science, Software Engineering
           </p>*/}
           <h1 className="font-display text-3xl sm:text-4xl leading-snug mb-6">
-            Hey!
+            Hi!
           </h1>
           <p className="max-w-xl text-bone-dim text-base leading-relaxed mb-10">
             I'm Keith, a first year Data Science grad student at Georgetown. I build things that combine machine learning, software engineering, and embedded systems.
@@ -86,7 +91,7 @@ export default function Home() {
         id="work"
         className="mx-auto max-w-4xl px-6 py-24 border-t border-surface-border"
       >
-        <p className="font-mono text-xs tracking-[0.2em] text-muted uppercase mb-10">
+        <p className="font-mono text-xs tracking-[0.2em] text-muted mb-10">
           Experience
         </p>
         <ul className="space-y-5">
@@ -109,11 +114,18 @@ export default function Home() {
 
       {/* PROJECTS */}
       <section className="mx-auto max-w-4xl px-6 py-24" id="projects">
-        <p className="font-mono text-xs tracking-[0.2em] text-muted uppercase mb-10">
+        <p className="font-mono text-xs tracking-[0.2em] text-muted mb-10">
           Projects
         </p>
 
         <div className="space-y-6">
+          <ProjectCard
+            href="https://thecaravelgu.com"
+            eyebrow="Web Dev"
+            title="The Caravel"
+            summary="Redesigning and self-hosting the website for Georgetown University's student-run international affairs paper"
+            accent = "wave"
+          />
           <ProjectCard
             href="/projects/fossil-fuel-ads"
             eyebrow="NLP · misinformation research"
@@ -136,17 +148,11 @@ export default function Home() {
         id="working-on"
         className="mx-auto max-w-4xl px-6 py-24 border-t border-surface-border"
       >
-        <p className="font-mono text-xs tracking-[0.2em] text-muted uppercase mb-10">
+        <p className="font-mono text-xs tracking-[0.2em] text-muted mb-10">
           Working On
         </p>
 
         <div className="space-y-6">
-          <ProjectCard
-            eyebrow="Web Development"
-            title="The Caravel"
-            summary="Georgetown University's only student-run international affairs paper"
-            accent = "wave"
-          />
           <ProjectCard
             eyebrow="Computer Vision · real-time NLG"
             title="Caster"
@@ -154,9 +160,9 @@ export default function Home() {
             accent="signal"
           />
           <ProjectCard
-            eyebrow="Predictive modeling · fantasy sports"
-            title="Fantasy Sports Analyzer"
-            summary="Training a model to project player value from historical performance instead of leaning on consensus ADP for fantasy football, then pushing that same forecast into weekly lineup decisions."
+            eyebrow="Computer Vision/Tracking · basketball analysis"
+            title="Basketball CV"
+            summary="Training a model to track and analyze basketball player movements and actions."
             accent="wave"
           />
         </div>
@@ -167,7 +173,7 @@ export default function Home() {
         id="school"
         className="mx-auto max-w-4xl px-6 py-24 border-t border-surface-border"
       >
-        <p className="font-mono text-xs tracking-[0.2em] text-muted uppercase mb-10">
+        <p className="font-mono text-xs tracking-[0.2em] text-muted mb-10">
           Education
         </p>
         <ul className="space-y-5">
@@ -213,7 +219,7 @@ function ProjectCard({
   const accentColor = accent === "signal" ? "text-signal" : "text-wave";
   const content = (
     <>
-      <p className={`font-mono text-xs tracking-[0.15em] uppercase mb-3 ${accentColor}`}>
+      <p className={`font-mono text-xs tracking-[0.15em] mb-3 ${accentColor}`}>
         {eyebrow}
       </p>
       <h3 className="font-display text-3xl mb-3 flex items-center gap-3">

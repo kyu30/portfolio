@@ -39,6 +39,7 @@ body {
   background: var(--ink);
   color: var(--bone);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  text-transform: lowercase;
 }
 
 ::selection {

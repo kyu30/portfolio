@@ -13,7 +13,7 @@ export default function DrumBreak() {
           ← back
         </Link>
 
-        <p className="font-mono text-xs tracking-[0.2em] text-wave uppercase mt-10 mb-4">
+        <p className="font-mono text-xs tracking-[0.2em] text-wave mt-10 mb-4">
           Generative audio · VAE / VQ-VAE
         </p>
         <h1 className="font-display text-5xl leading-tight mb-8">

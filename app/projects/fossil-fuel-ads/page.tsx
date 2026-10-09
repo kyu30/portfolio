@@ -12,7 +12,7 @@ export default function FossilFuelAds() {
           ← back
         </Link>
 
-        <p className="font-mono text-xs tracking-[0.2em] text-signal uppercase mt-10 mb-4">
+        <p className="font-mono text-xs tracking-[0.2em] text-signal mt-10 mb-4">
           NLP · Misinformation research
         </p>
         <h1 className="font-display text-5xl leading-tight mb-8">
